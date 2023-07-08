@@ -2,6 +2,9 @@ package org.example.Controller;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
+import org.example.App;
+
+import java.io.IOException;
 
 public class homeController {
 
@@ -11,8 +14,8 @@ public class homeController {
     public Button btnteams;
 
     @FXML
-    public void mng_drivers(){
-
+    public void mng_drivers() throws IOException {
+        App.setRoot("driversscene");
     }
     @FXML
     public void mng_teams(){
