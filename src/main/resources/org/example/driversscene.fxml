@@ -11,7 +11,6 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.Controller.DriversSceneController">
    <children>
       <ImageView fitHeight="600.0" fitWidth="800.0" pickOnBounds="true" preserveRatio="true">
@@ -33,7 +32,7 @@
             <TableColumn prefWidth="144.800048828125" text="Championships" />
         </columns>
       </TableView>
-      <Button fx:id="insertdriver" layoutX="630.0" layoutY="148.0" mnemonicParsing="false" onAction="#btn_insert_driver" prefHeight="46.0" prefWidth="138.0" style="-fx-background-color: rgb(227, 0, 0);" text="Insert Driver" textFill="WHITE">
+      <Button fx:id="insertdriver" layoutX="629.0" layoutY="253.0" mnemonicParsing="false" onAction="#btn_insert_driver" prefHeight="46.0" prefWidth="138.0" style="-fx-background-color: rgb(227, 0, 0);" text="Insert Driver" textFill="WHITE">
          <font>
             <Font size="18.0" />
          </font>
@@ -41,7 +40,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </Button>
-      <Button fx:id="modifyDriver" layoutX="630.0" layoutY="235.0" mnemonicParsing="false" onAction="#btn_modify_driver" prefHeight="46.0" prefWidth="138.0" style="-fx-background-color: rgb(227, 0, 0);" text="Modify Driver" textFill="WHITE">
+      <Button fx:id="modifyDriver" layoutX="629.0" layoutY="368.0" mnemonicParsing="false" onAction="#btn_modify_driver" prefHeight="46.0" prefWidth="138.0" style="-fx-background-color: rgb(227, 0, 0);" text="Modify Driver" textFill="WHITE">
          <font>
             <Font size="18.0" />
          </font>
@@ -49,7 +48,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </Button>
-      <Button fx:id="deletedriver" layoutX="630.0" layoutY="321.0" mnemonicParsing="false" onAction="#btn_delete_driver" prefHeight="46.0" prefWidth="138.0" style="-fx-background-color: rgb(227, 0, 0);" text="Delete Driver" textFill="WHITE">
+      <Button fx:id="deletedriver" layoutX="629.0" layoutY="502.0" mnemonicParsing="false" onAction="#btn_delete_driver" prefHeight="46.0" prefWidth="138.0" style="-fx-background-color: rgb(227, 0, 0);" text="Delete Driver" textFill="WHITE">
          <font>
             <Font size="18.0" />
          </font>
@@ -57,10 +56,18 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </Button>
-      <TextField fx:id="searchbar" layoutX="625.0" layoutY="445.0" onAction="#search" promptText="search">
+      <TextField fx:id="searchbar" layoutX="623.0" layoutY="169.0" onAction="#search" promptText="search">
          <cursor>
             <Cursor fx:constant="TEXT" />
          </cursor>
       </TextField>
+      <Button fx:id="goback" layoutX="630.0" layoutY="83.0" mnemonicParsing="false" onAction="#exit" prefHeight="40.0" prefWidth="138.0" style="-fx-background-color: rgb(227, 0, 0);" text="Back to Menu" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
    </children>
 </AnchorPane>
