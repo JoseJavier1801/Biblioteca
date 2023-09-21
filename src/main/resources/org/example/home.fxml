@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: rgb(85, 94, 68);" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.Controller.homeController">
+
+   <children>
+      <Label fx:id="login_txt" alignment="CENTER" layoutX="105.0" layoutY="50.0" prefHeight="51.0" prefWidth="611.0" style="-fx-background-color: white;" text="Main Menu" AnchorPane.leftAnchor="105.0" AnchorPane.rightAnchor="109.0">
+         <font>
+            <Font size="35.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </Label>
+      <AnchorPane id="btn_login" layoutX="409.0" layoutY="199.0" prefHeight="246.0" prefWidth="342.0" style="-fx-background-color: rgb(239, 184, 42);" AnchorPane.leftAnchor="409.0" AnchorPane.rightAnchor="74.0">
+         <children>
+            <Label fx:id="errortxt" layoutX="90.0" layoutY="148.0" textFill="RED">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <Button id="btn_login" fx:id="btn_admin" layoutX="86.0" layoutY="83.0" mnemonicParsing="false" onAction="#AdminLogin" prefHeight="39.0" prefWidth="144.0" style="-fx-background-color: rgb(76, 74, 69);" text="ADMIN LOGIN" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button id="btn_login" fx:id="btn_user" layoutX="86.0" layoutY="168.0" mnemonicParsing="false" onAction="#UserLogin" prefHeight="39.0" prefWidth="144.0" style="-fx-background-color: rgb(76, 74, 69);" text="USER LOGIN" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Label fx:id="login_txt1" alignment="CENTER" prefHeight="51.0" prefWidth="317.0" style="-fx-background-color: white;" text="Select An Option:">
+               <font>
+                  <Font size="35.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </Label>
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="42.0" fitWidth="52.0" layoutX="153.0" layoutY="56.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="153.0" AnchorPane.rightAnchor="595.0">
+         <image>
+            <Image url="@foto/gif1.gif" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="190.0" fitWidth="223.0" layoutX="128.0" layoutY="227.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@foto/logo.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="login_txt11" layoutX="409.0" layoutY="445.0" prefHeight="51.0" prefWidth="317.0" style="-fx-background-color: white;" text="Need a Acount?      ">
+         <font>
+            <Font size="29.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </Label>
+      <Button fx:id="btn_reg" layoutX="630.0" layoutY="456.0" mnemonicParsing="false" onAction="#reg" prefHeight="28.0" prefWidth="84.0" style="-fx-background-color: rgb(76, 74, 69);" text="REGISTER" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>
