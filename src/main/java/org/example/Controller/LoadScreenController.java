@@ -9,6 +9,7 @@ import org.example.App;
 import java.io.IOException;
 
 public class LoadScreenController {
+
     @FXML
     private ProgressBar progressbar;
     @FXML
@@ -45,4 +46,3 @@ public class LoadScreenController {
         loadingThread.start();
     }
 }
-

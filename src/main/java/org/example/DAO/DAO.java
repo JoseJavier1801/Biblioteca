@@ -14,5 +14,5 @@ public interface DAO<T> extends AutoCloseable{
 
 	T save(T entity) throws SQLException ;
 
-    void delete(T entity) throws SQLException ;
+	void delete(T entity) throws SQLException ;
 }

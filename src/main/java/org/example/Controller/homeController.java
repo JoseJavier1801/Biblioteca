@@ -1,33 +1,23 @@
 package org.example.Controller;
 
 import javafx.fxml.FXML;
-import javafx.scene.control.Button;
 import org.example.App;
 
 import java.io.IOException;
 
 public class homeController {
 
-    public Button btndrivers;
-    public Button btntracks;
-    public Button btnseason;
-    public Button btnteams;
-
     @FXML
-    public void mng_drivers() throws IOException {
-        App.setRoot("driversscene");
+    private void AdminLogin() throws IOException {
+        App.setRoot("adminLogin");
     }
     @FXML
-    public void mng_teams(){
-
+    private void UserLogin() throws IOException {
+        App.setRoot("UsersLogin");
     }
+
     @FXML
-    public void mng_season(){
-
+    private void reg() throws IOException {
+        App.setRoot("Register");
     }
-    @FXML
-    public void mng_tracks(){
-
-    }
-
 }

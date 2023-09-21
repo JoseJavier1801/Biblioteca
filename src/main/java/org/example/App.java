@@ -23,7 +23,7 @@ public class App extends Application {
         this.stage.setScene(scene);
         this.stage.show();
         stage.setResizable(false);
-        stage.setTitle("F1 Management");
+        stage.setTitle("Library");
     }
     public static void setRoot(String fxml) throws IOException {
         scene.setRoot(loadFXML(fxml));
