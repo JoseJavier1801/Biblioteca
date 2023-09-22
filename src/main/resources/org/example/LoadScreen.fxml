@@ -18,7 +18,7 @@
       </Label>
       <ImageView fitHeight="229.0" fitWidth="286.0" layoutX="288.0" layoutY="146.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@foto/logo.png" />
+            <Image url="@foto/biblioteca-imagen-animada-0026.gif" />
          </image>
       </ImageView>
       <ProgressIndicator fx:id="indicator" layoutX="746.0" layoutY="526.0" prefWidth="65.0" progress="0.0" />

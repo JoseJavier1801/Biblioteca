@@ -7,11 +7,12 @@
 <?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
 <AnchorPane prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: rgb(85, 94, 68);" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.Controller.RegisterController">
    <children>
-      <Label fx:id="login_txt" alignment="CENTER" layoutX="103.0" layoutY="56.0" prefHeight="51.0" prefWidth="611.0" style="-fx-background-color: white;" text="Acount Register">
+      <Label fx:id="login_txt" alignment="CENTER" layoutX="42.0" layoutY="69.0" prefHeight="51.0" prefWidth="714.0" style="-fx-background-color: white;" text="Acount Register">
          <font>
             <Font size="35.0" />
          </font>
@@ -19,38 +20,38 @@
             <Cursor fx:constant="DEFAULT" />
          </cursor>
       </Label>
-      <AnchorPane id="btn_login" layoutX="103.0" layoutY="146.0" prefHeight="366.0" prefWidth="611.0" style="-fx-background-color: rgb(239, 184, 42);">
+      <AnchorPane id="btn_login" layoutX="43.0" layoutY="121.0" prefHeight="438.0" prefWidth="714.0" style="-fx-background-color: rgb(239, 184, 42);">
          <children>
             <Label fx:id="errortxt" layoutX="90.0" layoutY="148.0" textFill="RED">
                <font>
                   <Font size="19.0" />
                </font>
             </Label>
-            <TextField fx:id="username" layoutX="275.0" layoutY="61.0" promptText="username" />
-            <PasswordField fx:id="passwd" layoutX="276.0" layoutY="111.0" promptText="password" />
-            <Label alignment="CENTER" layoutX="155.0" layoutY="60.0" prefHeight="28.0" prefWidth="120.0" text="USERNAME: ">
+            <TextField fx:id="username" layoutX="370.0" layoutY="62.0" prefHeight="51.0" prefWidth="277.0" promptText="username" />
+            <PasswordField fx:id="passwd" layoutX="370.0" layoutY="136.0" prefHeight="51.0" prefWidth="278.0" promptText="password" />
+            <Label alignment="CENTER" layoutX="64.0" layoutY="62.0" prefHeight="51.0" prefWidth="235.0" text="USERNAME: ">
                <font>
-                  <Font size="17.0" />
+                  <Font name="System Bold Italic" size="35.0" />
                </font>
             </Label>
-            <Label alignment="CENTER" layoutX="155.0" layoutY="109.0" prefHeight="28.0" prefWidth="120.0" text="PASSWORD: ">
+            <Label alignment="CENTER" layoutX="64.0" layoutY="137.0" prefHeight="50.0" prefWidth="235.0" text="PASSWORD: ">
                <font>
-                  <Font size="17.0" />
+                  <Font name="System Bold Italic" size="33.0" />
                </font>
             </Label>
-            <TextField fx:id="mail" layoutX="275.0" layoutY="159.0" promptText="mail" />
-            <Label alignment="CENTER" layoutX="155.0" layoutY="158.0" prefHeight="28.0" prefWidth="120.0" text="MAIL: ">
+            <TextField fx:id="mail" layoutX="370.0" layoutY="221.0" prefHeight="51.0" prefWidth="278.0" promptText="mail" />
+            <Label alignment="CENTER" layoutX="122.0" layoutY="219.0" prefHeight="55.0" prefWidth="120.0" text="MAIL: ">
                <font>
-                  <Font size="17.0" />
+                  <Font name="System Bold" size="33.0" />
                </font>
             </Label>
-            <TextField fx:id="DNI" layoutX="275.0" layoutY="209.0" promptText="DNI" />
-            <Label alignment="CENTER" layoutX="155.0" layoutY="208.0" prefHeight="28.0" prefWidth="120.0" text="DNI: ">
+            <TextField fx:id="DNI" layoutX="370.0" layoutY="296.0" prefHeight="51.0" prefWidth="278.0" promptText="DNI" />
+            <Label alignment="CENTER" layoutX="122.0" layoutY="294.0" prefHeight="51.0" prefWidth="120.0" text="DNI: ">
                <font>
-                  <Font size="17.0" />
+                  <Font name="System Bold" size="38.0" />
                </font>
             </Label>
-            <CheckBox fx:id="foradmin" layoutX="90.0" layoutY="290.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="150.0" text="ADMIN acount?">
+            <CheckBox fx:id="foradmin" layoutX="47.0" layoutY="385.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="150.0" text="ADMIN acount?">
                <font>
                   <Font size="16.0" />
                </font>
@@ -58,7 +59,7 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </CheckBox>
-            <Button fx:id="btn_reg" layoutX="431.0" layoutY="290.0" mnemonicParsing="false" onAction="#register" prefHeight="40.0" prefWidth="108.0" style="-fx-background-color: rgb(76, 74, 69);" text="Register" textFill="WHITE">
+            <Button fx:id="btn_reg" layoutX="553.0" layoutY="379.0" mnemonicParsing="false" onAction="#register" prefHeight="40.0" prefWidth="108.0" style="-fx-background-color: rgb(76, 74, 69);" text="Register" textFill="WHITE">
                <font>
                   <Font size="18.0" />
                </font>
@@ -66,12 +67,23 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </Button>
+            <Line endX="-100.0" endY="323.79998779296875" layoutX="131.0" layoutY="36.0" startX="-100.0" startY="11.300003051757812" />
+            <Line endX="528.800048828125" endY="174.05001831054688" layoutX="150.0" layoutY="32.0" startX="-118.5" startY="171.4000244140625" />
+            <Line endX="-100.0" endY="332.60003662109375" layoutX="436.0" layoutY="26.0" startX="-100.0" startY="22.300003051757812" />
+            <Line endX="-110.5" endY="241.79998779296875" layoutX="141.0" layoutY="46.0" startX="536.800048828125" startY="241.79998779296875" />
+            <Line endX="-109.5" endY="314.29998779296875" layoutX="141.0" layoutY="46.0" startX="536.800048828125" startY="314.29998779296875" />
+            <Line endX="536.800048828125" endY="1.8000030517578125" layoutX="141.0" layoutY="46.0" startX="-109.5" startY="1.8000030517578125" />
+            <Line endX="536.0" endY="82.59999084472656" layoutX="141.0" layoutY="46.0" startX="-108.79998779296875" startY="82.59999084472656" />
+            <Line endX="537.300048828125" endY="313.79998779296875" layoutX="141.0" layoutY="46.0" startX="537.300048828125" startY="2.3000030517578125" />
          </children>
       </AnchorPane>
-      <Button fx:id="btn_main" layoutX="595.0" layoutY="69.0" mnemonicParsing="false" onAction="#goBack" prefHeight="26.0" prefWidth="82.0" style="-fx-background-color: rgb(76, 74, 69);" text="Go Back" textFill="WHITE">
+      <Button fx:id="btn_main" layoutX="609.0" layoutY="75.0" mnemonicParsing="false" onAction="#goBack" prefHeight="40.0" prefWidth="94.0" style="-fx-background-color: rgb(76, 74, 69);" text="Go Back" textFill="WHITE">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>
       </Button>
+      <AnchorPane layoutX="29.0" layoutY="68.0" prefHeight="494.0" prefWidth="21.0" style="-fx-background-color: #555555;" />
+      <AnchorPane layoutX="746.0" layoutY="68.0" prefHeight="494.0" prefWidth="21.0" style="-fx-background-color: #555555;" />
+      <AnchorPane layoutX="27.0" layoutY="546.0" prefHeight="21.0" prefWidth="742.0" style="-fx-background-color: #555555;" />
    </children>
 </AnchorPane>

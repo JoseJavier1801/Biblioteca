@@ -13,15 +13,14 @@
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: rgb(85, 94, 68);" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.Controller.ULoginController">
 
    <children>
-      <Label fx:id="login_txt" alignment="CENTER" layoutX="105.0" layoutY="50.0" prefHeight="51.0" prefWidth="611.0" style="-fx-background-color: white;" text="User Login" AnchorPane.leftAnchor="105.0" AnchorPane.rightAnchor="109.0">
-         <font>
-            <Font size="35.0" />
-         </font>
-         <cursor>
-            <Cursor fx:constant="DEFAULT" />
-         </cursor>
-      </Label>
-      <AnchorPane id="btn_login" layoutX="413.0" layoutY="192.0" prefHeight="262.0" prefWidth="350.0" style="-fx-background-color: rgb(239, 184, 42);" AnchorPane.leftAnchor="413.0" AnchorPane.rightAnchor="37.0">
+      <AnchorPane layoutX="80.0" prefHeight="600.0" prefWidth="200.0" style="-fx-background-color: #494947;" />
+      <AnchorPane layoutX="530.0" prefHeight="600.0" prefWidth="184.0" style="-fx-background-color: #494947;" />
+      <ImageView fitHeight="600.0" fitWidth="649.0" layoutX="98.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@foto/usertest.png" />
+         </image>
+      </ImageView>
+      <AnchorPane id="btn_login" layoutX="223.0" layoutY="187.0" prefHeight="262.0" prefWidth="350.0" style="-fx-background-color: #797C0F;" AnchorPane.leftAnchor="223.0" AnchorPane.rightAnchor="227.0">
          <children>
             <Label layoutX="32.0" layoutY="60.0" text="USERNAME:">
                <font>
@@ -58,14 +57,17 @@
             </Button>
          </children>
       </AnchorPane>
-      <ImageView fitHeight="42.0" fitWidth="52.0" layoutX="153.0" layoutY="56.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="153.0" AnchorPane.rightAnchor="595.0">
+      <Label fx:id="login_txt" alignment="CENTER" layoutX="98.0" prefHeight="68.0" prefWidth="600.0" style="-fx-background-color: #F0F0F0;" text="User Login" AnchorPane.leftAnchor="98.0" AnchorPane.rightAnchor="102.0">
+         <font>
+            <Font size="35.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </Label>
+      <ImageView fitHeight="60.0" fitWidth="97.0" layoutX="107.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="107.0" AnchorPane.rightAnchor="596.0">
          <image>
-            <Image url="@foto/sonic.gif" />
-         </image>
-      </ImageView>
-      <ImageView fitHeight="190.0" fitWidth="223.0" layoutX="128.0" layoutY="227.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@foto/logo.png" />
+            <Image url="@foto/th%20(1).jpg" />
          </image>
       </ImageView>
       <Button fx:id="btn_main" layoutX="563.0" layoutY="64.0" mnemonicParsing="false" onAction="#goBack" style="-fx-background-color: rgb(76, 74, 69);" text="To Main Menu" textFill="WHITE">
